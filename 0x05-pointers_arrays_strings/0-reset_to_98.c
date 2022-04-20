@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - resets an number value of a pointer to 98
- *
+ *reset_to_98 - resets an number value of a pointer to 98
+ *@n: input *
  * Return: Always (success)
  *
  */
