@@ -26,7 +26,7 @@ int prime_func(int a, int b)
  * Return: Always 0
  */
 
-int is_primew_number(int n)
+int is_prime_number(int n)
 {
 	return (prime_func(n,2));
 }
