@@ -3,13 +3,13 @@
 
 /**
  *
- *  * _puts_recursion - main - check the code
+ * _puts_recursion - main - check the code
  *
- *   * @s: character of string
+ * @s: character of string
  *
- *    * Return: Always 0.
+ * Return: Always 0.
  *
- *     */
+ */
 
 void _puts_recursion(char *s)
 {
