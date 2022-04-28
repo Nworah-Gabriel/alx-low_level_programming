@@ -28,5 +28,5 @@ int prime_func(int a, int b)
 
 int is_prime_number(int n)
 {
-	return (prime_func(n,2));
+	return (prime_func(n, 2));
 }
