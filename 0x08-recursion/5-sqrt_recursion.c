@@ -11,7 +11,7 @@ int my_sqrt(int j, int i)
 {
 	if (i * i == j)
 	{
-		return(i);
+		return (i);
 	}
 	else if (i *  i >  j)
 	{
@@ -21,7 +21,7 @@ int my_sqrt(int j, int i)
 }
 
 /**
- * _sqrt_recursions - returns the natural square root af a number
+ * _sqrt_recursion - returns the natural square root af a number
  * @n: input
  * Return: Always 0
  */
