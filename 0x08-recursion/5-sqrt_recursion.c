@@ -11,13 +11,13 @@ int my_sqrt(int j, int i)
 {
 	if (i * i == j)
 	{
-		return(b);
+		return(i);
 	}
-	else if (b *  b >  a)
+	else if (i *  i >  j)
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion(a, b + 1));
+	return (_sqrt_recursion(j,i + 1));
 }
 
 /**
