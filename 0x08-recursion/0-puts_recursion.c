@@ -2,11 +2,8 @@
 #include "main.h"
 
 /**
- *
  * _puts_recursion - main - check the code
- *
  * @s: character of string
- *
  * Return: Always 0.
  *
  */
