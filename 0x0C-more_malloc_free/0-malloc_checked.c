@@ -1,4 +1,4 @@
-#include "main.h"
+It#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -11,8 +11,8 @@ void *malloc_checked(unsigned int b)
 {
 	void *p;
 
-	p = malloc(sizeof(char) * b);
+	p = malloc(sizeof(b));
 	if (p == NULL)
 		exit(98);
-	return (*p);
+	return (p);
 }
