@@ -1,6 +1,6 @@
-#ifndef MACRO_H
-#define MACRO_H
+#ifndef LIKEMACRO_H
+#define LIKEMACRO_H
 
 #define ABS(X) ((X) < 0 ? -(1) * (X): (X))
 
-#endif /*MACRO_H*/
+#endif
