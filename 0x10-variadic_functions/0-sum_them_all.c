@@ -15,13 +15,13 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_list mylist;
 	int sum = 0;
-	int i;
+	Unsigned int i;
 
 	va_start(mylist, n);
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(mylist, const unsigned int);
+		sum += va_arg(mylist, int);
 	}
 	va_end(mylist);
 	return (sum);
