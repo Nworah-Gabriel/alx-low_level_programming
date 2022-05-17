@@ -1,5 +1,4 @@
 #include "variadic_fuctions.h"
-#include  <stdarg.h>
 
 /**
   * sum_them_all - A function that returns the sum of digits
