@@ -50,7 +50,32 @@ void close_file(int fd)
  *@argv: file arguments
  *Return: return 0 on success
  */
-
 int main(int argc,char *argv[])
 {
-    A 
+	if (argc != 3)
+	{
+		write(STDERR_FILENO, "Usage: cp file_from file_to\n", 29);
+		exit(97);
+	}
+	int op = open(argv[1], O_CREAT | O_TRUNC | S_IWUSR | S_IRUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	int op2 = open(argv[1], O_RDONLY);
+
+	if (op2 == -1)
+	{
+		write(STDERR_FILNO, "Error can't read from the file %s\n", argv[1]);		exit(98);
+	}
+	if (op == -1)
+	{
+		dprintf(2, "Error: can't write to %s\n", argv[2]);
+		exit(99);
+	}	
+		char buff = create_buffer(op);
+	char rd;
+	
+	rd = read(op, buff, 1024);
+	wr = write(op, buff, op);
+	
+	close_file(op);
+	close_file(op2);
+
+}
