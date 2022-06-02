@@ -45,7 +45,8 @@ void close_file(int fd)
 }
 
 /**
- *main - a function that recieves parameters and copies file content from.one file to the other
+ *main - a function that recieves parameters and copies file content
+ from.one file to the other
  *@argc: file argument count
  *@argv: file arguments
  *Return: return 0 on success
