@@ -50,7 +50,7 @@ void close_file(int fd)
  *@argv: file arguments
  *Return: return 0 on success
  */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
