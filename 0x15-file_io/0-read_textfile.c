@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * read_textfile - reads a test file a nd prints it to the POSIX
  * @filename: file to be read from using the system call read
@@ -10,24 +9,28 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
+	ssize_t o, r, w;
+	char *buf;
 
-	fd = open(filename, O_CREAT | O_RDONLY, 0600);
-	if (!fd)
+	if (filename == NULL)
+		return (0);
+
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
+		return (0);
+
+	o = open(filename, O_RDONLY);
+	r = read(o, buf, letters);
+	w = write(STDOUT_FILENO, buf, r);
+
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
+		free(buf);
 		return (0);
 	}
-	if (fd == -1)
-	{
-		return (0);
-	}
-	char buf[2000];
 
-	read(fd, buf, letters);
+	free(buf);
+	close(o);
 
-	close(fd);
-
-	dprintf(fd, "%s \n", buf);
-
-	return (0);
+	return (w);
 }
