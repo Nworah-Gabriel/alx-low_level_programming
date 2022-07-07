@@ -1,1 +1,1 @@
-This is a README for my 0x17-doubly_linked_lists project!
+My practice on  ddata structures and algorithms using the doubly linked list
