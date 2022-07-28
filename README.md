@@ -1,2 +1,1 @@
-This is an excercise from alx software engineering training,
-it's a C programming excercise for beginners
+This repository contains my practice on low level programming language(specifically C programmming
